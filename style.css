@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color:#1E2939 ;
+}
+
+
+
+img{
+    max-height: 500px;
+    max-width: 100%;
+}
+
+h3{
+    color: #FFFF00;
+
+}
+
+
+p{
+    color: #fff;
+}
+
+.text{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* ul{
+  margin: 0;
+  padding-left: 9%;
+  padding-right: 10%;
+} */
+
+span{
+  color: #FFFF00;
+  font-size: 18px;
+
+}
+
+.fpp{
+  color: #FFFF00;
+}
+
+ol{
+  margin: 0;
+  padding-left: 9%;
+  padding-right: 10%;
+}
+
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    padding:  0 20px;
+  }
+
+  .slide{
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+    max-height: 250px;
+    max-width: 70%;
+  }
+
+  .slide h3{
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .slide.active{
+    flex: 10;
+
+  }
+
+  .slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3 ease-in 0.4s;
+
+  }
+
+  header{
+    /* background-color: #fff; */
+  min-height: 80px;
+  width: 100%;
+  margin: 0;
+  /* box-shadow: 0 1px 3px 0 #888; */
+  position: fixed;
+  z-index: 10;
+  display: inline-flex;
+  }
+
+
+
+  ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+    margin-top:25px; /*делаем отступ сверху*/
+    background:#819A32; /*добавляем фон всему меню*/
+    height: 50px; /*задаем высоту*/
+  }
+  a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background:#819A32; /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    padding:0px 15px; /*добавляем отступ*/
+    font-family: arial; /*меняем шрифт*/
+    line-height:50px; /*ровняем меню по вертикали*/
+    display: block;
+    border-right: 1px solid #677B27; /*добавляем бордюр справа*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+
+  }
+  a:hover {
+    background:#D43737;/*добавляем эффект при наведении*/
+  }
+  li {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    position:relative; /*задаем позицию для позиционирования*/
+  }
+
+      /*Стили для скрытого выпадающего меню*/
+      li > ul {
+          position:absolute;
+          top:25px;
+          display:none;
+      }
+
+      /*Делаем скрытую часть видимой*/
+      li:hover > ul {
+          display:block;
+          width:250px;  /*Задаем ширину выпадающего меню*/
+      }
+     li:hover > ul > li {
+          float:none; /*Убираем горизонтальное позиционирование*/
+      }
